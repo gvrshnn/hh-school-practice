@@ -10,9 +10,8 @@
     "build": "parcel build *.html --public-url './'",
     "deploy": "yarn build && gh-pages -d dist",
     "format": "bash tools/format.sh",
-    "postinstall": "cp -p tools/githooks/* .git/hooks || true",
-    "lint": "eslint js/",
-    "prepare": "husky install"
+    "postinstall": "cp -p tools/githooks/* .git/hooks || true && chmod +x .git/hooks/*",
+    "lint": "eslint js/"
   },
   "browserslist": [
     "Chrome 37"
