@@ -7,3 +7,5 @@ document.addEventListener('keydown', (event) => {
         grid.classList.toggle('grid_visible');
     }
 });
+
+console.log([...grid.classList]);

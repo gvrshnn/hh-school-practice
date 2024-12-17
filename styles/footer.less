@@ -1,0 +1,61 @@
+.footer {
+    background: rgb(33, 33, 34);
+    padding: 30px 0px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.flex-row(@gap) {
+    display: flex;
+    flex-direction: row;
+    gap: @gap;
+}
+
+.social {
+    .flex-row(16px);
+    &__icon {
+        height: 36px;
+    }
+}
+
+.app {
+    .flex-row(8px);
+    &__icon {
+        height: 40px;
+    }
+}
+
+.copyright {
+    color: rgb(153, 153, 153);
+    line-height: 20px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.logo {
+    display: none;
+}
+
+@media @gt-mobile {
+    .links {
+        flex-direction: row;
+    }
+    .copyright {
+        margin-top: 30px;
+    }
+    .container {
+        padding: 0 35px;
+    }
+}
+
+@media @gt-tablet {
+    .logo {
+        display: flex;
+    }
+}
