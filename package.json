@@ -12,7 +12,7 @@
         "format": "bash tools/format.sh",
         "postinstall": "cp -p tools/githooks/* .git/hooks || true && chmod +x .git/hooks/*",
         "lint": "eslint js/",
-        "prepare": "husky"
+        "prepare": "husky install"
     },
     "browserslist": [
         "Chrome 37"
