@@ -3,7 +3,11 @@ grid.className = 'grid';
 document.body.appendChild(grid);
 
 document.addEventListener('keydown', (event) => {
-    if (event.ctrlKey && event.code === 'KeyG') {
-        grid.classList.toggle('grid_visible');
-    }
+  if (event.ctrlKey && event.code === 'KeyG') {
+    grid.classList.toggle('grid_visible');
+  }
 });
+
+//error
+
+console.log([...grid.classList]);

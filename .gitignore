@@ -6,3 +6,10 @@ yarn-error.log
 .idea
 .cache
 .DS_Store
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
